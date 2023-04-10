@@ -16,7 +16,7 @@ from semi_classes import SelfTrainingClassifierExtended as SelfTraining, CatBoos
 df = pd.read_csv("/spaceship-titanic/train.csv")
 df = df.sample(frac=1.0)
 
-test = pd.read_csv("/home/constantz/Загрузки/spaceship-titanic/test.csv")
+test = pd.read_csv("/spaceship-titanic/test.csv")
 df = df.append(test)
 
 df.CryoSleep = df.apply(lambda x : x.CryoSleep if x.CryoSleep==x.CryoSleep else
